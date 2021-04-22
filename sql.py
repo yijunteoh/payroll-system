@@ -25,5 +25,5 @@ class sql1:
             # print("Edit failed!")
     def close(self):
         self.cursor.close()
-        print("closed")
+        # print("closed")
         self.db.close()
