@@ -1,7 +1,7 @@
 import sqlite3
 class sql1:
     def __init__(self):
-        self.db = sqlite3.connect("vacancy1.db")
+        self.db = sqlite3.connect("Employee.db")
         self.cursor = self.db.cursor()
     # get all data from db
     def fetchall(self,sql):
@@ -25,5 +25,4 @@ class sql1:
             # print("Edit failed!")
     def close(self):
         self.cursor.close()
-        # print("closed")
         self.db.close()
