@@ -1,0 +1,7 @@
+To run the function 5(printing payslip):
+You have to download library reportlab
+
+To download reportlab:
+1. Open you command prompt
+2. type 'pip install reportlab'
+3. Completed

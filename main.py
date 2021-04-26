@@ -120,6 +120,7 @@ class Main:
             DB.execute(Insert_data)
             DB.execute(Insert_salary)
             DB.close()
+            print('Successfully Added')
         self.selection()
 
     def delete_employee(self):
@@ -269,7 +270,7 @@ class Main:
             total_earning = basic_pay + float(overtime_pay_float) + allowance
             fileName = '{}.pdf'.format(employee_name)
             documentTitle = 'Document title!'
-            title = 'Lenviva Computer Sdn Bhd '
+            title = 'Lenviva Computer Pte Ltd '
             subTitle = 'Pay Slip for Feb 2021'
             PDF_Employee_ID = 'Employee_ID:'
             PDF_ID = '{}'.format(employee_id)
@@ -299,7 +300,7 @@ class Main:
 
             Total_Earning = 'Total Earnings:'
             Total_Deductions = 'Total Deductions:'
-            Total_Deductions_amount = '{}'.format(total_deduction)
+            Total_Deductions_amount = '{0:.2f}'.format(total_deduction)
             PDF_Net_pay = 'Net Pay:'
             Net_pay_amount = '{}'.format(netpay)
 
